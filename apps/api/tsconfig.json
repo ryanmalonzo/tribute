@@ -6,6 +6,9 @@
 		"jsxImportSource": "hono/jsx",
 		"module": "esnext",
 		"moduleResolution": "bundler",
+		"paths": {
+			"@/*": ["./*"]
+		},
 		"strict": true,
 		"target": "es2025"
 	}
