@@ -1,7 +1,12 @@
 {
-  "compilerOptions": {
-    "strict": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
-  }
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"ignoreDeprecations": "6.0",
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"strict": true,
+		"target": "es2025"
+	}
 }

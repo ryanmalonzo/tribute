@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:18.4-trixie
+    container_name: tribute-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - "db:/var/lib/postgresql"
+    environment:
+      POSTGRES_USER: tribute
+      POSTGRES_PASSWORD: tribute
+      POSTGRES_DB: tribute
+    restart: unless-stopped
+
+volumes:
+  db:
